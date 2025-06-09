@@ -2,8 +2,9 @@ import { createClient } from '@supabase/supabase-js';
 import type { Database } from '../types/supabase';
 
 // Initialize the Supabase client
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+const supabaseUrl = 'https://dlexwpzbibgbeqmweynl.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRsZXh3cHpiaWJnYmVxbXdleW5sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwNDk5NTMsImV4cCI6MjA2NDYyNTk1M30.4vjJgR5qnpP7aja0kvaM6li-5TJPyE5ZMdvcGNKegF0';
+
 
 console.log('🔧 SUPABASE CONFIGURATION');
 console.log('URL:', supabaseUrl ? `${supabaseUrl.substring(0, 30)}...` : '❌ MISSING');
